@@ -1,0 +1,312 @@
+<div class="loader-wrapper">
+    <div class="loader">
+        <div class="loader-inner"></div>
+    </div>
+</div>
+ <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedCode  Roleplay</title>
+    
+    <!-- CSS dosyaları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JavaScript dosyaları -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body> <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html#" class="logo">RedCode Roleplay</a>
+        <div class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html#" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="index.html#hizmetlerim" class="nav-link">Sunucu Özellikleri</a></li>
+                <li><a href="index.html#istatistikler" class="nav-link">Sunucu İstatistikleri</a></li>
+                
+            </ul>
+        </div>
+        <div class="nav-buttons">
+                <a href="bakiye/index.php.html" class="btn btn-primary">Bakiye Yükle</a>
+                <a href="ucp/login.php.html" class="btn btn-primary">Giriş Yap</a>
+            <button class="theme-toggle">
+                <i class=""></i>
+            </button>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav> 
+<!-- Ana Sayfa -->
+<section id="anasayfa" class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="floating-logo">
+                <img src="logo.png" alt="RedCode  Logo" class="logo-image">
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">RedCode </span> Roleplay
+            </h1>
+            <p class="hero-description">
+                Türkiye'nin en gelişmiş MTA:SA Roleplay deneyimi. 
+                Gerçekçi sistemler, özel modellenmiş tüm araçklarımız, özgün içerikler ve profesyonel yönetim kadrosuyla benzersiz bir oyun deneyimi.
+            </p>
+            <div class="hero-buttons">
+                <a href="mtasa://193.35.154.20:22003" class="btn btn-primary">
+                    Sunucuya Bağlan
+                    <i class="fas fa-play"></i>
+                </a>
+                <a href="https://discord.gg/SBcKPsVu" class="btn btn-outline">
+                    Discord'a Katıl
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Video Container Eklendi -->
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay loop muted playsinline>
+                <source src="tanitim.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+
+<!-- Özellikler Bölümü -->
+<section id="hizmetlerim" class="services">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Sunucu Özellikleri</h2>
+        <div class="services-grid">
+            <!-- Roleplay Sistemleri -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Gelişmiş RP Sistemleri</h3>
+                <p>Detaylı karakter geliştirme, meslek ve ekonomi sistemleri ile gerçekçi bir roleplay deneyimi.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> 20+ Meslek Sistemi</li>
+                    <li><i class="fas fa-check"></i> Kapsamlı Ekonomi</li>
+                    <li><i class="fas fa-check"></i> Özel Balıkçılık</li>
+                    <li><i class="fas fa-check"></i> Alınabilir Tır,Taxi,Otobüs</li>
+                </ul>
+            </div>
+
+            <!-- Araç Sistemleri -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3>Araç Sistemleri</h3>
+                <p>Özelleştirilebilir araçlar ve gelişmiş mekanikler ile benzersiz sürüş deneyimi.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> 120+ Özel Araç</li>
+                    <li><i class="fas fa-check"></i> Araç Modifiye</li>
+                    <li><i class="fas fa-check"></i> Tuning Sistemi</li>
+                    <li><i class="fas fa-check"></i> Modifiye Sistemi</li>
+                </ul>
+            </div>
+
+            <!-- Özel İçerikler -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Özel İçerikler</h3>
+                <p>Benzersiz sistemler ve özellikler ile farklı bir oyun deneyimi.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Özel Harita</li>
+                    <li><i class="fas fa-check"></i> Telefon Sistemi</li>
+                    <li><i class="fas fa-check"></i> Gang Sistemi</li>
+                    <li><i class="fas fa-check"></i> Ev & İşyeri</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- İstatistikler Bölümü -->
+<section id="istatistikler" class="stats">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Sunucu İstatistikleri</h2>
+        <div class="stats-grid">
+            <!-- Oyuncu İstatistikleri -->
+            <div class="stat-group">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-counter">
+                            <h3 class="counter" data-target="10000">0</h3>
+                            <span>+</span>
+                        </div>
+                        <p>Kayıtlı Oyuncu</p>
+                    </div>
+                    <div class="stat-detail">
+                        <span>Günlük Aktif: 50+</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performans İstatistikleri -->
+            <div class="stat-group">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-counter">
+                            <h3>99.9</h3>
+                            <span>%</span>
+                        </div>
+                        <p>Active</p>
+                    </div>
+                    <div class="stat-detail">
+                        <span>by guard Anticheat Sistemi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sunucu Yaşı -->
+            <div class="stat-group">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-counter">
+                            <h3 class="counter" data-target="6">0</h3>
+                            <span>+</span>
+                        </div>
+                        <p>Yıllık Deneyim</p>
+                    </div>
+                    <div class="stat-detail">
+                        <span>Kesintisiz Hizmet</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oyun İçi Ekonomi -->
+        </div>
+    </div>
+</section>
+
+<!-- Yetkili Ekibimiz Bölümü -->
+<section class="team">
+    <h2>Yetkili Ekibimiz</h2>
+    <div class="team-container">
+        <!-- Kurucu -->
+        <div class="team-member">
+            <img src="logo.png" alt="Kurucu">
+            <h3>SLAX</h3>
+            <p>Sunucu Kurucusu</p>
+            <div class="social-links">
+                <a href="https://revalroleplay.com/discord.gg/revalroleplay"><i class="fab fa-discord"></i></a>
+                <a href="index.html#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <!-- Kurucu -->
+        <div class="team-member">
+            <img src="logo.png" alt="Kurucu">
+            <h3>Wandex.Exe</h3>
+            <p>Sunucu Kurucusu</p>
+            <div class="social-links">
+                <a href="index.html#"><i class="fab fa-discord"></i></a>
+                <a href="index.html#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Yetkili 2 -->
+        <div class="team-member">
+            <img src="logo.png" alt="Yetkili">
+            <h3>Jesse Pickman</h3>
+            <p>Üst Yönetim Ekibi</p>
+            <div class="social-links">
+                <a href="index.html#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+
+        <!-- Yetkili 3 -->
+        <div class="team-member">
+            <img src="logo.png" alt="Yetkili">
+            <h3>Yetkili Adı</h3>
+            <p>Genel Yetkili</p>
+            <div class="social-links">
+                <a href="index.html#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+
+        <!-- Yetkili 4 -->
+        <div class="team-member">
+            <img src="logo.png" alt="Yetkili">
+            <h3>Yetkili Adı</h3>
+            <p>S3</p>
+            <div class="social-links">
+                <a href="index.html#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+
+        <!-- Yetkili 5 -->
+        <div class="team-member">
+            <img src="logo.png" alt="Yetkili">
+            <h3>Yetkili Adı</h3>
+            <p>S2</p>
+            <div class="social-links">
+                <a href="index.html#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+
+        <!-- Yetkili 6 -->
+        <div class="team-member">
+            <img src="logo.png" alt="Yetkili">
+            <h3>Yetkili Adı</h3>
+            <p>S1</p>
+            <div class="social-links">
+                <a href="index.html#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+
+        <!-- Yetkili 7 -->
+        <div class="team-member">
+            <img src="logo.png" alt="Yetkili">
+            <h3>Rehber Adı</h3>
+            <p>Rehber</p>
+            <div class="social-links">
+                <a href="index.html#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2025 RedCode Roleplay tüm hakları saklıdır. | <a href="" target="_blank" class="gradient-link">Developed by SLAX </a></p>
+        </div>
+    </div>
+</footer>
+
+<button id="scrollToTop" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+</body>
+</html> 
+
+<script>
+window.addEventListener('load', function() {
+    document.body.style.overflow = 'hidden';
+    setTimeout(function() {
+        document.body.style.overflow = 'auto';
+    }, 1500);
+});
+</script>
